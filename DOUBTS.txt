@@ -1,0 +1,11 @@
+1.Git does not store a separate copy of every file in every commit, but keeps track of changes made in each commit!
+
+2.Since the emergency-fix branch came directly from master, and no other changes had been made to master while we were working, Git sees this as a continuation of master. So it can "Fast-forward", just pointing both master and emergency-fix to the same commit.As master and emergency-fix are essentially the same now, we can delete emergency-fix, as it is no longer needed.
+
+3.When the pull request has been reviewed and everything looks good, it is time for the final testing. GitHub allows you to deploy from a branch for final testing in production before merging with the master branch.
+
+If any issues arise, you can undo the changes by deploying the master branch into production again!
+
+4.Git will not track files and folders specified in .gitignore. However, the .gitignore file itself IS tracked by Git.
+
+5.
